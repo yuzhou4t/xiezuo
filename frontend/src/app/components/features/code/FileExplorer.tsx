@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Folder, FolderOpen, File, ChevronRight, ChevronDown, RefreshCw } from "lucide-react";
-import { codeApi, FileTreeItem } from "../../../../api/codeApi";
+import codeApi, { FileTreeItem } from "../../../../api/codeApi";
 
 interface FileExplorerProps {
   onFileSelect: (path: string) => void;

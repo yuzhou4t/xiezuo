@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Save, X, File } from "lucide-react";
-import { codeApi } from "../../../../api/codeApi";
+import codeApi from "../../../../api/codeApi";
 
 interface CodeEditorProps {
   path: string | null;

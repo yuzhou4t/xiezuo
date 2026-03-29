@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { X, ArrowLeftRight } from "lucide-react";
-import { codeApi } from "../../../../api/codeApi";
+import codeApi from "../../../../api/codeApi";
 
 interface DiffViewProps {
   commitHash: string;

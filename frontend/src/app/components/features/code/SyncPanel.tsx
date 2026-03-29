@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { GitPull, GitPush, Settings, RefreshCw } from "lucide-react";
-import { codeApi } from "../../../../api/codeApi";
+import codeApi from "../../../../api/codeApi";
 
 interface SyncPanelProps {
   onStatusChange?: (status: { clean: boolean; files: any[] }) => void;

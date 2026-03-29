@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { History, Eye, RotateCcw } from "lucide-react";
-import { codeApi, CommitInfo } from "../../../../api/codeApi";
+import codeApi, { CommitInfo } from "../../../../api/codeApi";
 
 interface VersionHistoryProps {
   filePath?: string;
