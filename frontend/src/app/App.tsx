@@ -7,8 +7,9 @@ import { QuarterlyReportModule } from "./components/features/quarterly";
 import { ImageModule } from "./components/features/image";
 import { DataSourcePanel } from "./components/layout/DataSourcePanel";
 import { HistoryPanel } from "./components/HistoryPanel";
+import CodePage from "./features/code/page";
 import pbocLogo from "../assets/9d80b1a068fa275c0785a292f5a33bc94ff0f912.png";
-import type { ActiveModule } from "./components/Sidebar";
+import type { ActiveModule } from "./components/layout/Sidebar";
 
 type ViewState =
   | { type: "module"; module: ActiveModule }
@@ -65,6 +66,8 @@ export default function App() {
         return <QuarterlyReportModule />;
       case "image":
         return <ImageModule />;
+      case "code":
+        return <CodePage />;
       default:
         return <LibraryModule />;
     }

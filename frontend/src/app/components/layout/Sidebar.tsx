@@ -7,10 +7,11 @@ import {
   Landmark,
   ChevronsLeft,
   ChevronsRight,
+  Code2,
 } from "lucide-react";
 import pbocLogo from "../../../assets/9d80b1a068fa275c0785a292f5a33bc94ff0f912.png";
 
-export type ActiveModule = "library" | "research" | "image";
+export type ActiveModule = "library" | "research" | "image" | "code";
 
 interface SidebarProps {
   activeModule: ActiveModule;
@@ -26,6 +27,7 @@ const navItems = [
   { id: "library" as ActiveModule, label: "文献与公文库", icon: BookOpen },
   { id: "research" as ActiveModule, label: "国别深度研究", icon: Globe2 },
   { id: "image" as ActiveModule, label: "图片转译", icon: ImageIcon },
+  { id: "code" as ActiveModule, label: "代码协作", icon: Code2 },
 ];
 
 export function Sidebar({

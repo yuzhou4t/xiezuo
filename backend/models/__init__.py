@@ -11,6 +11,7 @@ from models.document import Document, DocumentType
 from models.task import Task, TaskStatus, TaskType
 from models.image_translation import ImageTranslation, ImageTranslationStatus
 from models.document_translation import DocumentTranslation, DocumentTranslationStatus
+from models.git_commit import GitCommit
 
 # 多对多关系表（文档-标签）
 # 需要在 Tag 和 Document 模型都导入之后创建
@@ -38,6 +39,7 @@ __all__ = [
     "ImageTranslationStatus",
     "DocumentTranslation",
     "DocumentTranslationStatus",
+    "GitCommit",
     # Relationship Tables
     "document_tags",
 ]

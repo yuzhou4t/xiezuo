@@ -11,6 +11,7 @@ from models.base import Base, UUIDMixin, TimestampMixin
 if TYPE_CHECKING:
     from models.document import Document
     from models.task import Task
+    from models.git_commit import GitCommit
 
 
 class User(Base, UUIDMixin, TimestampMixin):
@@ -70,6 +71,12 @@ class User(Base, UUIDMixin, TimestampMixin):
     tasks: Mapped[List["Task"]] = relationship(
         "Task",
         back_populates="owner",
+        cascade="all, delete-orphan",
+    )
+
+    git_commits: Mapped[List["GitCommit"]] = relationship(
+        "GitCommit",
+        back_populates="author",
         cascade="all, delete-orphan",
     )
 
