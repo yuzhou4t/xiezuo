@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { FileExplorer } from "../components/features/code/FileExplorer";
-import { CodeEditor } from "../components/features/code/CodeEditor";
-import { VersionHistory } from "../components/features/code/VersionHistory";
-import { DiffView } from "../components/features/code/DiffView";
-import { SyncPanel } from "../components/features/code/SyncPanel";
-import { codeApi } from "../../api/codeApi";
+import { FileExplorer } from "../../components/features/code/FileExplorer";
+import { CodeEditor } from "../../components/features/code/CodeEditor";
+import { VersionHistory } from "../../components/features/code/VersionHistory";
+import { DiffView } from "../../components/features/code/DiffView";
+import { SyncPanel } from "../../components/features/code/SyncPanel";
+import { codeApi } from "../../../api/codeApi";
 
 export default function CodePage() {
   const [currentFile, setCurrentFile] = useState<string | null>(null);
