@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { GitPull, GitPush, Settings, RefreshCw } from "lucide-react";
+import { Upload, Download, Settings, RefreshCw } from "lucide-react";
 import codeApi from "../../../../api/codeApi";
 
 interface SyncPanelProps {
@@ -117,7 +117,7 @@ export function SyncPanel({ onStatusChange }: SyncPanelProps) {
           disabled={loading}
           className="flex items-center gap-1 px-3 py-1 text-sm border rounded hover:bg-gray-50 disabled:opacity-50"
         >
-          <GitPull className="w-4 h-4" />
+          <Download className="w-4 h-4" />
           拉取
         </button>
 
@@ -126,7 +126,7 @@ export function SyncPanel({ onStatusChange }: SyncPanelProps) {
           disabled={loading}
           className="flex items-center gap-1 px-3 py-1 text-sm border rounded hover:bg-gray-50 disabled:opacity-50"
         >
-          <GitPush className="w-4 h-4" />
+          <Upload className="w-4 h-4" />
           推送
         </button>
 
